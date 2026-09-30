@@ -1,0 +1,20 @@
+[theme]
+base = "light"
+primaryColor = "#0149AF"
+font = "sans serif"
+
+[theme.light]
+primaryColor = "#0149AF"
+backgroundColor = "#f0f7ff"
+secondaryBackgroundColor = "#ffffff"
+textColor = "#142e4d"
+borderColor = "#9ac9ed"
+dataframeHeaderBackgroundColor = "#e4f2ff"
+
+[theme.dark]
+primaryColor = "#00B2E2"
+backgroundColor = "#101923"
+secondaryBackgroundColor = "#182635"
+textColor = "#f1f5f9"
+borderColor = "#405970"
+dataframeHeaderBackgroundColor = "#203245"

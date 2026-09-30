@@ -1,0 +1,82 @@
+/* Cores vêm de kit-visual-diroma/tema/tokens.json, aplicadas por tema.py. */
+[data-testid="stApp"], [data-testid="stAppViewContainer"], [data-testid="stHeader"] {
+    background:var(--portal-bg); color:var(--portal-text); color-scheme:var(--portal-scheme);
+    font-family:Arial,sans-serif;
+}
+.block-container {max-width:1180px;padding:4rem 1.5rem 2rem}
+[data-testid="stVerticalBlock"] {gap:.7rem}
+[data-testid="stMarkdownContainer"] p, [data-testid="stMarkdownContainer"] li,
+[data-testid="stExpander"] summary, input, textarea, button {
+    font-family:Arial,sans-serif;font-size:13px;line-height:1.3;
+}
+[data-testid="stAppViewContainer"] [data-testid="stMarkdownContainer"] {color:var(--portal-text)}
+[data-testid="stWidgetLabel"] p, [data-testid="stMetricLabel"] p,
+[data-testid="stCaptionContainer"] p {font-size:12px;color:var(--portal-muted)}
+h1 {font:600 25px/1.2 Arial,sans-serif!important;color:var(--portal-title)!important}
+h2,h3 {font:600 15px/1.3 Arial,sans-serif!important;color:var(--portal-heading)!important}
+.st-key-alternador-tema {display:flex;align-items:flex-end;margin-bottom:4px}
+.st-key-alternador-tema [data-testid="stButton"] {display:flex;justify-content:flex-end}
+.portal-header {display:flex;align-items:center;gap:28px;padding:var(--portal-header-padding);margin-bottom:12px;
+    background:var(--portal-header-bg);border:var(--portal-header-border);
+    border-left:var(--portal-header-left);border-bottom:var(--portal-header-bottom);
+    border-radius:var(--portal-header-radius)}
+.portal-header img {width:200px;height:124px;object-fit:cover;background:#fff;border-radius:6px;flex-shrink:0}
+.portal-header p {font-size:13px;color:var(--portal-muted);margin-bottom:0}
+[data-testid="stSidebar"], [data-testid="stMetric"] {background:var(--portal-surface);color:var(--portal-text)}
+[data-testid="stMetric"] {border:1px solid var(--portal-border);padding:8px 10px;border-radius:var(--portal-group-radius)}
+[data-testid="stMetricValue"] {color:var(--portal-text);font-size:24px;line-height:1.25}
+.st-key-resumo-valores [data-testid="stMetricValue"] {font-size:clamp(16px,1.6vw,22px)}
+[data-testid="stMetricValue"]>div {white-space:normal;overflow-wrap:anywhere}
+[data-testid="stExpander"] details {background:var(--portal-group-bg);border:1px solid var(--portal-border);border-radius:var(--portal-group-radius)}
+[data-testid="stExpander"] summary {background:var(--portal-soft);color:var(--portal-text);padding:8px}
+[data-testid="stExpanderDetails"] {padding:8px}
+[data-baseweb="input"], [data-baseweb="textarea"], [data-baseweb="select"]>div {
+    background:var(--portal-surface);color:var(--portal-text);border:1px solid var(--portal-field-border);border-radius:3px;
+}
+input, textarea, [data-baseweb="select"] span {color:var(--portal-text)!important}
+input::placeholder, textarea::placeholder {color:var(--portal-muted)!important;opacity:1}
+[data-baseweb="popover"], [data-baseweb="popover"] ul, [data-baseweb="popover"] li {
+    background:var(--portal-surface);color:var(--portal-text);font:13px Arial,sans-serif;
+}
+[data-baseweb="popover"] li:hover, [data-baseweb="popover"] [aria-selected="true"] {background:var(--portal-hover)}
+[data-testid="stFileUploaderDropzone"] {background:var(--portal-soft);color:var(--portal-text);border:1px dashed var(--portal-title);border-radius:5px}
+[data-testid="stFileUploaderDropzone"] small,[data-testid="stFileUploaderFileName"] {color:var(--portal-muted)}
+.stButton button,.stDownloadButton button,[data-testid="stFileUploaderDropzone"] button {
+    min-height:32px;padding:6px 12px;border:1px solid transparent;border-radius:6px;box-shadow:none;
+    background:var(--portal-secondary);color:var(--portal-secondary-text);
+}
+.stButton button p,[data-testid="stFileUploaderDropzone"] button p {color:inherit!important}
+.stButton button:hover,[data-testid="stFileUploaderDropzone"] button:hover {background:var(--portal-secondary-hover);color:var(--portal-secondary-text)}
+.stDownloadButton button, .stButton button[kind="primary"] {background:var(--portal-button);color:var(--portal-on-primary)}
+.stDownloadButton button p,.stButton button[kind="primary"] p {color:var(--portal-on-primary)!important}
+.stDownloadButton button:hover,.stButton button[kind="primary"]:hover {background:var(--portal-button-hover);color:var(--portal-on-primary)}
+button:disabled {opacity:.55;cursor:not-allowed}
+button:focus-visible, input:focus-visible, textarea:focus-visible, summary:focus-visible,
+[role="tab"]:focus-visible, a:focus-visible,[tabindex="0"]:focus-visible {
+    outline:3px solid var(--portal-secondary)!important;outline-offset:3px;
+}
+[data-baseweb="input"]:focus-within,[data-baseweb="select"]:focus-within {outline:3px solid var(--portal-secondary);outline-offset:3px}
+[data-baseweb="tab-list"] {gap:3px;background:var(--portal-soft)}
+[data-baseweb="tab"] {min-height:35px;height:auto;padding:6px 10px;border-radius:0;color:var(--portal-muted);font:12px Arial,sans-serif}
+[data-baseweb="tab"][aria-selected="true"] {background:var(--portal-active-bg);color:var(--portal-active-text);font-weight:600;border:1px solid var(--portal-border);box-shadow:var(--portal-active-line)}
+[data-baseweb="tab-highlight"] {display:none}
+[data-baseweb="tab-panel"] {background:var(--portal-surface);border:1px solid var(--portal-field-border);padding:16px 10px 10px}
+[data-testid="stDataFrame"] {border:1px solid var(--portal-field-border);border-radius:3px;min-width:0;overflow-x:auto}
+[data-testid="stTable"] {overflow-x:auto}
+[data-testid="stTable"] table {font:13px Arial,sans-serif;border-collapse:collapse}
+[data-testid="stTable"] th {font-size:12px;font-weight:600;color:var(--portal-muted);background:var(--portal-soft)}
+[data-testid="stTable"] td,[data-testid="stTable"] th {padding:4px 6px;border:1px solid var(--portal-field-border)}
+[data-testid="stAlert"] {background:var(--portal-soft);color:var(--portal-text);border:1px solid var(--portal-border);border-left:3px solid var(--portal-title);border-radius:3px}
+[data-testid="stAlert"] svg {color:var(--portal-title)}
+[data-testid="stSpinner"] {color:var(--portal-muted)}
+@media(max-width:699px) {
+    .block-container {padding:3.5rem .6rem 1rem}
+    .portal-header {flex-direction:column;align-items:flex-start;gap:12px;padding:12px}
+    .portal-header img {width:170px;height:106px}
+    [data-testid="stHorizontalBlock"] {display:flex;flex-wrap:wrap;gap:6px}
+    [data-testid="stHorizontalBlock"]>[data-testid="stColumn"] {flex:1 1 calc(50% - 6px)!important;min-width:0!important;width:calc(50% - 6px)!important}
+    [data-testid="stMetricValue"] {font-size:20px}
+    .st-key-resumo-valores [data-testid="stMetricValue"] {font-size:16px}
+}
+
+.st-key-descricao-excel [data-testid="stCaptionContainer"] p {color:var(--portal-text);font-weight:500}
